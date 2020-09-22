@@ -1,0 +1,19 @@
+header {
+    font-family: "Courier New", "Lucida Console";
+    size: 32px;
+    color: #ff0000;
+    font-style: oblique;
+}
+
+p {
+    font-family: "Cedarville Cursive";
+    size: 10vw;
+    color: #0000ff;
+}
+
+footer {
+    font-family: "Ostrich Sans";
+    size: 1.6vw;
+    color: hsl(350, 100%, 88%);
+    font-stretch: expanded;
+}
