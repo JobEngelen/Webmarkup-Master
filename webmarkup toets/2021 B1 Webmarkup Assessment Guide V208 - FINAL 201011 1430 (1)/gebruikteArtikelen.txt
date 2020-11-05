@@ -1,0 +1,14 @@
+1
+Product : Victron SmartSolar MPPT 100-50 12V 24V charge controller
+Shop link : http://www.ikwilzonneenergie.nl/Victron-SmartSolar-MPPT-100-50-12V-24V
+Product description : https://www.victronenergy.com/solar-charge-controllers/smartsolar-100-30-100-50
+
+2
+Product : SMA SB3.6 Solar panels inverter 1 phase
+Shop link : http://www.ikwilzonneenergie.nl/SMA-Sunny-Boy-SB36-omvormer
+Product description : https://www.sma.de/en/products/solarinverters/sunny-boy-30-36-40-50-60.html
+
+3
+Product : Victron Phoenix inverter 12V 1200W VE.Direct
+Shop link : http://www.ikwilzonneenergie.nl/Victron-Phoenix-omvormer-12V-1200Watt
+Product description : https://www.victronenergy.com/inverters/phoenix-inverter-vedirect-250va-800va

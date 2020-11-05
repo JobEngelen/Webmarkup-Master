@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="utf-8" />
+    <title>Contact</title>
+    <meta name="keywords" content="Webmarkup, HBO, InHolland, Haarlem, Solar">
+    <meta name="description" content="Deze website is gemaakt voor het vak Webmarkup, van de opleiding Informatica HBO.">
+    <meta name="author" content="Job Engelen">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/contact.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
+    <link rel="icon" href="img/favicon.png" type="image/gif" sizes="16x16">
+</head>
+<body>
+<article class="grid-container">
+    <article class="logo">
+        <figure>
+            <img src="img/logo.png" alt="Logo website" title="Logo">
+            <figcaption><em class="figc">Figure 1 - Logo</em></figcaption>
+        </figure>
+    </article>
+    <article class="title"><h1>InHolland solar energy</h1></article>
+    <article class="payoff"><h2>Make the world a better place</h2></article>
+    <!-- Regular navigation for pc/tablet -->
+    <nav class="nav">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="howsolarworks.html">How solar works</a></li>
+            <li><a href="eusolar.html">EUsolar</a></li>
+            <li><a href="contact.html" class="active">Contact us</a></li>
+        </ul>
+    </nav>
+    <!-- Hamburger menu for phone -->
+    <nav class="navPhone">
+        <input id="show" type=checkbox>
+        <label for="show">&#9776;</label>
+        <span id="navPhoneToggle">
+            <a href="index.html">Home</a>
+            <a href="howsolarworks.html">EUsolar</a>
+            <a href="eusolar.html">Solar in the eu</a>
+            <a href="contact.html" class="active">Contact us</a>
+        </span>
+    </nav>
+    <article class="contactinfo">
+        <h3>Contactformulier</h3>
+        <em>
+            Als u contact met ons wilt opnemen, vul dan de volgende velden in:
+        </em>
+    </article>
+    <form action="https://i-want-solar-energy.com/testform.php" class="form" method="POST">
+        <fieldset>
+            <legend><strong>Contactformulier</strong></legend>
+            <p><label for="name">Naam</label></p>
+            <input type="text" id="name" name="name" placeholder="Jan Jansen">
+            <p><label for="email">E-mail</label></p>
+            <input type="email" id="email" name="email" placeholder="voorbeeld@email.com">
+            <p><label for="message">Bericht</label></p>
+            <textarea name="message" id="message" placeholder="Uw bericht..."></textarea>
+            <p><input type="submit" name="submit" class="submit"></p>
+        </fieldset>
+    </form>
+    <!-- 3 products -->
+    <aside class="aside">
+        <a href="https://www.ikwilzonneenergie.nl/epages/61494231.sf/nl_NL/?ObjectPath=/Shops/61494231/Products/SCC110050210">
+            <figure>
+                <img src="img/victron_laadregelaar.png" alt="Victron SmartSolar MPPT 100-50 12V 24V" title="Victron SmartSolar">
+                <figcaption><p class="figc"> Figure 2 - Victron SmartSolar MPPT 100-50 12V 24V charge controller (&copy; ikwilzonneenergie.nl)</p></figcaption>
+            </figure>
+        </a>
+        <a href="http://www.ikwilzonneenergie.nl/SMA-Sunny-Boy-SB36-omvormer">
+            <figure>
+                <img src="img/SMA-SB30-SB50-omvormer_turning.png" alt="SMA SB3.6 Solar panels inverter 1 phase" title="SMA SB3.6 Solar panels inverter 1 phase">
+                <figcaption><p class="figc"> Figure 3 - SMA SB3.6 Solar panels inverter 1 phase (&copy; ikwilzonneenergie.nl)</p></figcaption>
+            </figure>
+        </a>
+        <a href="https://www.ikwilzonneenergie.nl/epages/61494231.sf/nl_NL/?ObjectPath=/Shops/61494231/Products/SCC110050210">
+            <figure>
+                <img src="img/Phoenix-inverter-12V-1200-top.png" alt="Victron Phoenix inverter 12V 1200W VE.Direct" title="Victron Phoenix inverter">
+                <figcaption><p class="figc"> Figure 4 - Victron Phoenix inverter 12V 1200W VE.Direct (&copy; ikwilzonneenergie.nl)</p></figcaption>
+            </figure>
+        </a>
+    </aside>
+    <footer class="footer"><em>&copy; 2020 Job Engelen 669915</em></footer>
+    <aside class="cookie"><em>Cookie statement</em></aside>
+</article>
+</body>
+</html>

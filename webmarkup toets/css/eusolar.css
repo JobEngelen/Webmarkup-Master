@@ -1,0 +1,195 @@
+@font-face {
+    font-family: Notable;
+    src: url('../fonts/Notable/Notable-Regular.ttf');
+}
+body {
+    margin: 0; font-family: "Arial", "Helvetica", "SansSerif";
+}
+h1, h2, h3 { margin: 0; font-family: 'Notable', SansSerif}
+h1 { text-transform: uppercase;}
+.title { grid-area: title; background-color: #696969; color: #FFFFFF;}
+.logo figure, p { margin: 0;}
+.logo {
+    position: static;
+    background-color: hsl(44, 100%, 59%);
+    border-color: #ff00ff;
+    border-style: double;
+    border-width: 5px;
+}
+.payoff { grid-area: payoff; background-color: darkgrey; color: #FFFFFF;}
+
+li a { color: #FFFFFF;}
+li a:hover { text-shadow: 2px 2px #000000;}
+.active { font-weight: bolder; color: #00bfff; text-shadow: 2px 2px #6495ed;}
+span > a { background-color: #ffc0cb; padding: 10px; margin: 1px; display: block;}
+
+.cookie {
+    padding: 10px;
+    grid-area: cookie;
+    background-color: #FA0;
+    opacity: 50%;
+    color: #FFF;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+}
+.article_data { grid-area: ad; background-color: plum;}
+.table_data { grid-area: td; background-color: #FFFFFF;}
+.footer { grid-area: footer; background-color: #D8BFD8;}
+footer { font-style: italic;}
+
+.grid-container > article {
+    text-align: center;
+    padding: 15px 0;
+    font-size: 30px;
+}
+/* P */
+p {
+    letter-spacing: 1px;
+    line-height: 1em;
+    text-indent: 10px;
+    word-spacing: 2px;
+}
+p::first-letter {
+    font-size: 200%;
+    color: #008000;
+}
+
+/* figcaption-style */
+.figc {
+    text-align: center;
+    font-size: 15px;
+    font-style: italic;
+}
+
+figure img {
+    max-height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+figcaption {
+    text-align: center;
+}
+
+li + li { color: #00008b;}
+li + li + li{ color: #006400;}
+ul > li { background-color: #ffc0cb; padding: 10px;}
+
+.article_data p {
+    padding: 0 30px 0 30px;
+    text-align: left;
+    font-size: 22px;
+}
+/* table */
+table {
+    width: 100%; border-spacing:0;
+}
+th { background-color: #000000; text-align: left; color: #ffffff;}
+td {
+    border-top: 1px solid #000000;
+    border-bottom: 1px solid #000000;
+    border-left: 1px solid #000000;
+    border-right: 1px solid #000000;
+    text-align: right;
+}
+td:first-child { background-color: #FF0; text-align: left; width: 127px;}
+tr:nth-child(even) { background-color: #CFF;}
+tr:nth-child(uneven) { background-color: #FFF;}
+
+/* PC version eusolar.html */
+@media only screen and (min-width : 1280px) {
+    .logo { grid-area: logo; background-color: #FFC72B;}
+    .nav {
+        grid-area: nav;
+        background-color: #9ACD32;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+    }
+    .nav ul li {float: left; margin: 30px;}
+    .navPhone { display: none;}
+    .footer_copy_phone { display: none;}
+    .aside { grid-area: aside; background-color: #fafad2; }
+    .aside_tablet_p2 { display: none;}
+    .aside_tablet_p3 { display: none;}
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+                'logo logo logo'
+                'title title title'
+                'payoff payoff payoff'
+                'nav nav nav'
+                'ad ad ad'
+                'td td aside'
+                'footer footer cookie';
+    }
+}
+/* Tablet version eusolar.html */
+@media only screen and (min-width : 481px) and (max-width: 1279px) {
+    .logo { grid-area: logo; background-color: #FFC72B;}
+    .nav {
+        grid-area: nav;
+        background-color: #9ACD32;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+    }
+    .nav ul li {float: left; margin: 30px;}
+    .navPhone { display: none;}
+    .table_pc { display: none;}
+    .footer_copy_phone { display: none;}
+    .aside { display: none;}
+    .aside_tablet_p2 { grid-area: aside2; background-color: #fafad2;}
+    .aside_tablet_p3 { grid-area: aside3; background-color: #ffa07a;}
+    .cookie { font-size: 30px;}
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+                'logo logo'
+                'title title'
+                'payoff payoff'
+                'nav nav'
+                'ad ad'
+                'td td'
+                'aside2 aside3'
+                'footer cookie';
+    }
+    table {
+        font-size: 30px;
+    }
+}
+/* Mobile version eusolar.html */
+@media only screen and (max-width : 480px) {
+    .logo { display: none;}
+    .nav { display: none;}
+    h1, h2 { font-size: 20px;}
+    .navPhone { grid-area: nav; background-color: #8a2be2; color: #FFFFFF;}
+    .navPhone label { font-size: 70px;}
+    .navPhone a { font-size: 15px; color: #ffffff;}
+    .table_pc { display: none;}
+    .table_tablet { display: none;}
+    .article_data { display: none;}
+    .footer_copy { display: none;}
+    .footer_copy_phone { grid-area: footerPhone; background-color: #98fb98;}
+    .aside { grid-area: aside; background-color: #fafad2; }
+    .aside_tablet_p2 { display: none;}
+    .aside_tablet_p3 { display: none;}
+    .grid-container {
+        display: grid;
+        grid-template-areas:
+                'title nav'
+                'payoff nav'
+                'td td'
+                'footerPhone footerPhone'
+                'aside aside'
+                'footer cookie';
+    }
+    table {
+        font-size: 15px;
+    }
+}
+/* Hamburger menu-toggle for phone */
+#show,#navPhoneToggle{display:none;}
+#show:checked~#navPhoneToggle{display:block;}

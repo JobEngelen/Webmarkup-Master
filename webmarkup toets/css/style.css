@@ -1,0 +1,261 @@
+@font-face {
+    font-family: Notable;
+    src: url('../fonts/Notable/Notable-Regular.ttf');
+}
+body {
+    margin: 0; font-family: "Arial", "Helvetica", "SansSerif";
+}
+h1, h2, h3 { margin: 0; font-family: 'Notable', SansSerif}
+h1 { text-transform: uppercase;}
+header { text-align: center;}
+header figure { margin: 0; padding-top: 15px;}
+.logo {
+    position: static;
+    background-color: hsl(44, 100%, 59%);
+    border-color: #ff00ff;
+    border-style: double;
+    border-width: 5px;
+}
+.logo figcaption { margin: 0; padding: 13px 0 18px 0;}
+.title {
+    width: 100%;
+    padding: 15px 0 15px 0;
+    background-color: #696969;
+    color: #FFFFFF;
+    font-size: 30px;
+    text-align: center;
+}
+.payoff {
+    width: 100%;
+    padding: 15px 0 15px 0;
+    background-color: darkgrey;
+    color: #FFFFFF;
+    font-size: 30px;
+}
+
+li a { color: #FFFFFF; font-size: 1em;}
+li a:hover { text-shadow: 2px 2px #000000;}
+.active { font-weight: bolder; color: #00bfff; text-shadow: 2px 2px #6495ed;}
+span > a { background-color: #ffc0cb; padding: 10px; margin: 1px; display: block;}
+
+#video {
+    width: 100%;
+}
+/* P */
+p {
+    letter-spacing: 1px;
+    line-height: 1em;
+    text-indent: 10px;
+    word-spacing: 2px;
+}
+article > p::first-letter {
+    font-size: 200%;
+    color: #008000;
+}
+
+/* figcaption-style */
+.figc {
+    font-size: 15px;
+    font-style: italic;
+}
+figure img {
+    max-height: 200px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+li + li { color: #00008b;}
+li + li + li{ color: #006400;}
+ul > li { background-color: #ffc0cb; padding: 10px;}
+
+.footer {
+    background-color: #D8BFD8;
+}
+footer {
+    display: block;
+    font-style: italic;
+    width: 70%;
+}
+.cookie {
+    padding: 10px;
+    grid-area: cookie;
+    background-color: #FA0;
+    opacity: 50%;
+    color: #FFF;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    z-index: 9999;
+}
+/* PC version index.html */
+@media only screen and (min-width : 1280px) {
+    .nav {
+        background-color: #9ACD32;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+    }
+    .nav ul li {float: left; margin: 30px; }
+    .nav_section_phone { display: none;}
+
+    .article_section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section_main {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        float: left;
+    }
+    .productDes {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        float: left;
+        padding: 20px;
+    }
+    .productImg {
+        width: 30%;
+        text-align: center;
+        float: right;
+    }
+    .a1 { background-color: #98fb98; flex-basis: 100%; flex-grow: 1;}
+    .a2 { background-color: #00bfff; flex-basis: 100%; flex-grow: 1;}
+    .a3 { background-color: #87cefa; flex-basis: 100%; flex-grow: 1;}
+
+    .aside {
+        flex-grow: 0;
+        flex-shrink: 0;
+        width: 30%;
+        float: left;
+        background-color: #fafad2;
+    }
+    aside {
+        display: block;
+    }
+}
+
+/* Tablet version index.html */
+@media only screen and (min-width : 481px) and (max-width: 1279px) {
+    .nav {
+        background-color: #9acd32;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+    }
+    .nav ul li {float: left; margin: 30px; }
+    .nav_section_phone { display: none;}
+    .article_section {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section_main {
+        order: 1;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        float: left;
+    }
+    .productDes {
+        display: flex;
+        flex-wrap: wrap;
+        width: 60%;
+        float: right;
+        padding: 20px;
+    }
+    .productImg {
+        width: 30%;
+        text-align: center;
+    }
+    figure img { max-width: 200px;}
+    .a3 { background-color: #98fb98; flex-basis: 100%; flex-grow: 1; order: 0;}
+    .a2 { background-color: #87cefa; flex-basis: 100%; flex-grow: 1; order: 1;}
+    .a1 { background-color: #00bfff; flex-basis: 100%; flex-grow: 1; order: 2;}
+
+    .aside {
+        order: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+        width: 30%;
+        float: left;
+        background-color: #fafad2;
+    }
+    aside {
+        display: block;
+    }
+}
+
+/* Mobile version index.html */
+@media only screen and (max-width: 480px) {
+    .logo { display: none;}
+    h1, h2, h3 { font-size: 20px;}
+    header { display: flex; flex-wrap: wrap;}
+    .header_section {
+        display: flex;
+        flex-wrap: wrap;
+        width: 70%;
+        float: left;
+    }
+    /* nav */
+    .nav { display: none;}
+    .navPhone {
+        background-color: #8a2be2;
+        color: #ffffff;
+        height: 100%;
+    }
+    .navPhone label { font-size: 70px;}
+    .navPhone a { font-size: 15px; color: #ffffff;}
+    .nav_section {
+        flex-grow: 1;
+        flex-shrink: 0;
+        width: 30%;
+        float: left;
+    }
+    .nav_section_phone { height: 100%;}
+
+    #movie_section { display: none;}
+    /* articles */
+    header h3 { font-size: 20px; text-align: left;}
+    .article_section {
+        font-size: 15px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .section_main {
+        order: 1;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        float: left;
+    }
+    .productDes {
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        float: right;
+    }
+    .productImg { width: 100%; text-align: center; }
+    figure img {
+        max-height: 100px;
+    }
+    .a3 { background-color: #98fb98; flex-basis: 100%; flex-grow: 1; order: 0;}
+    .a2 { background-color: #87cefa; flex-basis: 100%; flex-grow: 1; order: 1;}
+    .a1 { background-color: #00bfff; flex-basis: 100%; flex-grow: 1; order: 2;}
+
+    .aside {
+        order: 0;
+        flex-grow: 1;
+        flex-shrink: 1;
+        width: 30%;
+        font-size: 20px;
+        padding-left: 20px;
+        float: left;
+        background-color: #fafad2;
+    }
+    aside { display: block; }
+    footer { font-size: 15px; }
+}
+/* Hamburger menu-toggle for phone */
+#show,#navPhoneToggle{display:none;}
+#show:checked~#navPhoneToggle{display:block;}
