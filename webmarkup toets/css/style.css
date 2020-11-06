@@ -7,11 +7,12 @@ body {
 }
 h1, h2, h3 { margin: 0; font-family: 'Notable', SansSerif}
 h1 { text-transform: uppercase;}
+.hidden { display: none;}
 header { text-align: center;}
 header figure { margin: 0; padding-top: 15px;}
 .logo {
     position: static;
-    background-color: hsl(44, 100%, 59%);
+    background-color: rgb(255, 199, 43);
     border-color: #ff00ff;
     border-style: double;
     border-width: 5px;
@@ -22,7 +23,7 @@ header figure { margin: 0; padding-top: 15px;}
     padding: 15px 0 15px 0;
     background-color: #696969;
     color: #FFFFFF;
-    font-size: 30px;
+    font-size: 35px;
     text-align: center;
 }
 .payoff {
@@ -194,7 +195,7 @@ footer {
     .header_section {
         display: flex;
         flex-wrap: wrap;
-        width: 70%;
+        width: 66%;
         float: left;
     }
     /* nav */

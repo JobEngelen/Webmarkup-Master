@@ -7,15 +7,17 @@ body {
 }
 h1, h2, h3 { margin: 0; font-family: 'Notable', SansSerif}
 h1 { text-transform: uppercase;}
+.hidden { display: none;}
 .title { grid-area: title; background-color: #696969; color: #FFFFFF; }
 .logo figure, em { margin: 0;}
 .logo {
     position: static;
-    background-color: hsl(44, 100%, 59%);
+    background-color: rgb(255, 199, 43);
     border-color: #ff00ff;
     border-style: double;
     border-width: 5px;
 }
+.title { text-align: center; font-size: 35px; padding: 15px 0 15px 0;}
 .payoff { grid-area: payoff; background-color: darkgrey; color: #FFFFFF;}
 
 li a { color: #FFFFFF;}
